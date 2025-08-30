@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Bubble_Sort_Optimised{
+public class Bubble_Sort{
       public static void print(int []n ){
             for(int ele: n){
                 System.out.print(ele+" ");
@@ -17,17 +17,12 @@ public class Bubble_Sort_Optimised{
         } 
             print(n);
             for(int i=0;i<n.length-1;i++){
-                int swaps=0;
                 for(int j=0;j<n.length-1-i;j++){
                     if(n[j]>n[j+1]){ 
                     int temp=n[j];
                     n[j]=n[j+1];
                     n[j+1]=temp;
-                    swaps++;
                 }
-                }
-                if(swaps==0){ 
-                     break;
                 }
             }
             print(n);
